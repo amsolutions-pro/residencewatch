@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ResidenceWatch · Armenian surname spellings</title>
+<meta name="description" content="Type an Armenian surname in Latin, Cyrillic or Armenian script and get the spellings to search for in records and archives: Eastern and Western Armenian, English, French, German and Russian usage.">
+
+<link rel="stylesheet" href="fonts/names.css">
+<style>
+/* Layout: same reading column as the guide; one input, then a ranked list of spellings with their reasons. */
+:root {
+  --bg: #fbfaf7; --surface: #ffffff; --ink: #1d232b; --muted: #5d6672; --line: #e2ddd3;
+  --accent: #9b2c1f; --accent-soft: #f6e7e2; --warn: #8a5a00; --warn-soft: #fbf0d9;
+  --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-body: "Golos Text", "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #14171c; --surface: #1b2027; --ink: #e8e6e1; --muted: #a3a9b2; --line: #2e343d;
+    --accent: #f08a74; --accent-soft: #3a211c; --warn: #f2c26b; --warn-soft: #33290f; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 max(16px, env(safe-area-inset-left, 0px)) 0 max(16px, env(safe-area-inset-right, 0px)); }
+header.top { border-bottom: 1px solid var(--line); }
+header.top .wrap { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-block: 14px; flex-wrap: wrap; }
+.brand { font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; color: var(--ink); text-decoration: none; }
+.brand span { color: var(--accent); }
+nav a { color: var(--accent); font-size: .9rem; }
+.hero { padding-block: 36px 18px; display: grid; gap: 12px; }
+h1 { font-family: var(--font-display); font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1.15; margin: 0; text-wrap: balance; }
+.lede { color: var(--muted); margin: 0; max-width: 62ch; }
+form { display: flex; gap: 8px; flex-wrap: wrap; padding-block: 8px 20px; }
+label.sr { position: absolute; left: -9999px; }
+input[type="text"] { flex: 1 1 260px; min-width: 0; font: inherit; padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); }
+button { font: inherit; font-weight: 700; padding: 12px 18px; border: 0; border-radius: 8px; background: var(--accent); color: #fff; cursor: pointer; }
+input:focus-visible, button:focus-visible, .chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.examples { display: flex; gap: 8px; flex-wrap: wrap; margin-top: -10px; padding-bottom: 18px; }
+.chip { font: inherit; font-size: .85rem; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.status { color: var(--muted); font-size: .9rem; min-height: 1.4em; }
+ol.results { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+ol.results li { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px; display: grid; gap: 2px; }
+.form { font-weight: 700; font-size: 1.1rem; overflow-wrap: anywhere; }
+.why { color: var(--muted); font-size: .88rem; }
+.tag { display: inline-block; font-size: .7rem; letter-spacing: .05em; text-transform: uppercase; font-weight: 700; padding: 1px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); margin-left: 6px; vertical-align: middle; }
+.notice { background: var(--warn-soft); border-left: 4px solid var(--warn); padding: 12px 16px; border-radius: 6px; font-size: .92rem; margin-block: 24px; }
+.next { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent); padding: 14px 16px; border-radius: 6px; margin-block: 8px 24px; }
+.next h2 { font-family: var(--font-display); font-size: 1.25rem; line-height: 1.25; margin: 0 0 6px; }
+.next p { margin: 0; font-size: .95rem; }
+.next a { color: var(--accent); }
+footer { border-top: 1px solid var(--line); margin-top: 24px; }
+footer .wrap { padding-block: 20px 36px; color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">Residence<span>Watch</span></a>
+    <nav><a href="index.html">Residence rules guide</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>How else might your Armenian surname be written?</h1>
+    <p class="lede">Records spell the same family name in many ways: Eastern or Western Armenian, English, French, German or Russian usage, -yan or -ian, -iants or -yantz. Type a surname to get the spellings worth searching for in archives, registries and old documents.</p>
+  </div>
+
+  <form id="f" autocomplete="off">
+    <label class="sr" for="q">Surname</label>
+    <input id="q" type="text" placeholder="Petrosyan, Петросян or Պետրոսյան" spellcheck="false">
+    <button type="submit">Show spellings</button>
+  </form>
+  <div class="examples" aria-label="Examples">
+    <button class="chip" type="button" data-name="Hovhannisyan">Hovhannisyan</button>
+    <button class="chip" type="button" data-name="Gevorgyan">Gevorgyan</button>
+    <button class="chip" type="button" data-name="Ter-Petrosyan">Ter-Petrosyan</button>
+    <button class="chip" type="button" data-name="Харутюнян">Харутюнян</button>
+    <button class="chip" type="button" data-name="Հակոբյան">Հակոբյան</button>
+  </div>
+
+  <p class="status" id="status" role="status" aria-live="polite"></p>
+  <ol class="results" id="results"></ol>
+
+  <p class="notice"><strong>Suggestions, not proof.</strong> These spellings are generated from transliteration standards and common spelling habits. They help you search; they do not prove a family link. Armenian-script input gives the most precise results.</p>
+
+  <section class="next" aria-labelledby="next-h">
+    <h2 id="next-h">Looking for your family's village?</h2>
+    <p>Place names changed too. A village remembered by its Armenian name was often renamed, so it has to be traced through its Armenian, Ottoman and present-day Turkish names. Two public resources help: <a href="https://www.nisanyanyeradlari.com/" rel="noopener">Nişanyan's inventory of settlements in Turkey</a>, which records old and new place names, and <a href="https://www.houshamadyan.org/" rel="noopener">Houshamadyan</a>, which reconstructs the life of Ottoman Armenian towns and villages from survivors' memoirs.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">ResidenceWatch · Nothing you type leaves your browser · Transliteration standards via the armenian-transliteration library (ISC licence).</div>
+</footer>
+
+<script src="vendor/armenian-transliteration-3.0.0.global.js"></script>
+<script src="names.js"></script>
+<script>
+(function () {
+  "use strict";
+  const lib = window.armenianTransliteration || null;
+  const q = document.getElementById("q");
+  const list = document.getElementById("results");
+  const status = document.getElementById("status");
+  function show(name) {
+    const out = window.RelocateNames.variants(name, lib);
+    list.replaceChildren();
+    if (!out.length) { status.textContent = "Type a surname to see its spellings."; return; }
+    status.textContent = out.length + " spellings, most likely first" + (lib ? "." : ". (Armenian-script standards unavailable offline.)");
+    out.forEach(v => {
+      const li = document.createElement("li");
+      const f = document.createElement("span");
+      f.className = "form";
+      f.textContent = v.form;
+      if (v.script === "cyrillique") { const t = document.createElement("span"); t.className = "tag"; t.textContent = "Cyrillic"; f.append(t); }
+      const w = document.createElement("span");
+      w.className = "why";
+      w.textContent = v.why.length ? v.why.join(" · ") : "as typed, standard English spelling";
+      li.append(f, w);
+      list.append(li);
+    });
+  }
+  document.getElementById("f").addEventListener("submit", e => { e.preventDefault(); show(q.value); });
+  document.querySelectorAll(".chip").forEach(b => b.addEventListener("click", () => { q.value = b.dataset.name; show(q.value); }));
+})();
+</script>
+<p style="text-align:center;font-size:.85rem;margin:24px 0"><a href="legal.html">Legal notice</a> · <a href="privacy.html">Privacy</a> · <a href="changes.html">Changes</a></p>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ResidenceWatch · Residence checklist</title>
+<style>
+:root { --bg:#fbfaf7; --surface:#fff; --ink:#1d232b; --muted:#5d6672; --line:#e2ddd3; --accent:#9b2c1f; --warn:#8a5a00; --warn-soft:#fbf0d9; color-scheme: light; }
+@media (prefers-color-scheme: dark) { :root { --bg:#14171c; --surface:#1b2027; --ink:#e8e6e1; --muted:#a3a9b2; --line:#2e343d; --accent:#f08a74; --warn:#f2c26b; --warn-soft:#33290f; color-scheme: dark; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.6 "Segoe UI","Noto Sans Armenian",system-ui,sans-serif; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px 48px; }
+header { display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between; align-items:baseline; padding:14px 0; border-bottom:1px solid var(--line); }
+.brand { font-weight:700; font-size:1.2rem; color:var(--ink); text-decoration:none; }
+.brand span { color:var(--accent); }
+.langs button { font:inherit; font-size:.85rem; font-weight:600; background:none; border:0; color:var(--accent); cursor:pointer; padding:2px 6px; text-decoration:underline; }
+.langs button[aria-pressed=true] { color:var(--ink); text-decoration:none; }
+h1 { font-size: clamp(1.6rem,5vw,2.2rem); line-height:1.2; margin:28px 0 8px; }
+.notice { background:var(--warn-soft); border-left:4px solid var(--warn); padding:10px 14px; border-radius:6px; font-size:.92rem; margin:14px 0; }
+h2 { font-size:1.2rem; margin:24px 0 8px; }
+ul { list-style:none; padding:0; margin:0; display:grid; gap:8px; }
+li label { display:flex; gap:10px; align-items:flex-start; background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:10px 12px; cursor:pointer; }
+input[type=checkbox] { width:20px; height:20px; margin-top:3px; flex:none; accent-color:var(--accent); }
+input:checked + span { color:var(--muted); text-decoration:line-through; }
+.src { color:var(--muted); font-size:.85rem; margin-top:18px; }
+button.print { font:inherit; font-weight:600; padding:8px 14px; border-radius:6px; border:1px solid var(--accent); background:transparent; color:var(--accent); cursor:pointer; margin-top:8px; }
+a { color: var(--accent); }
+@media print { body { background:#fff; color:#000; } .langs, button.print { display:none; } li label { break-inside:avoid; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="index.html">Residence<span>Watch</span></a>
+    <span class="langs" role="group" aria-label="Language">
+      <button type="button" data-l="en" aria-pressed="true">English</button>
+      <button type="button" data-l="ru" aria-pressed="false">Русский</button>
+      <button type="button" data-l="hy" aria-pressed="false">Հայերեն</button>
+    </span>
+  </header>
+  <h1 id="t"></h1>
+  <p class="notice" id="n"></p>
+  <div id="c"></div>
+  <p class="src" id="s"></p>
+  <button class="print" type="button" id="p"></button>
+</div>
+<script>
+var D = {
+  en: { lang: "en", title: "Checklist before the 1 November 2026 change", notice: "General information, not legal advice. Based on the guide checked on 22 October 2026; quotas, fees and the new platform may still change.", print: "Print", src: "Details and sources: the full guide (index.html).",
+    groups: [
+      ["Now", ["Gather your documents first: certified translations and apostille take two to eight weeks depending on the country.", "Find out whether you can still file before 1 November under the current rules (booking an appointment has been hard since June).", "Do not invest for residence purposes until the investor rules are published."]],
+      ["If you start a business", ["Open a business bank account in advance.", "Keep proof of turnover for the 60 days before you apply (individual entrepreneur: AMD 1,000,000), or proof of AMD 2,000,000 in the company's charter capital or in shares.", "Remember: the status can end if no tax from the activity shows after 180 days."]],
+      ["When you file (online only from 1 November)", ["Expect the new platform of the Migration and Citizenship Service; the name and address are not confirmed (migration.e-gov.am and EarlyOne stop on 1 November).", "Check the quota for your category once the figures are published.", "State fees on the official pages on 22 October: AMD 105,000 (temporary) and 140,000 (permanent); higher amounts announced but not confirmed."]],
+      ["After you hold the status", ["No extension: file a new application before a temporary permit expires.", "Report any absence of 183 days or more within 10 days.", "Permanent residence generally needs three years of temporary status within the last five."]],
+      ["Before you pay or sign anything", ["Discuss your situation with a licensed Armenian lawyer."]]
+    ] },
+  ru: { lang: "ru", title: "Чек-лист перед изменением 1 ноября 2026 года", notice: "Общая информация, не юридическая консультация. Основано на руководстве, проверенном 22 октября 2026 года; квоты, пошлины и новая платформа ещё могут измениться. Перевод пока не проверен носителем языка: при расхождениях действует английская версия.", print: "Печать", src: "Подробности и источники: полное руководство (ru.html).",
+    groups: [
+      ["Сейчас", ["Начните с документов: заверенные переводы и апостиль занимают от двух до восьми недель в зависимости от страны.", "Узнайте, можно ли ещё подать заявление до 1 ноября по нынешним правилам (с июня записаться на приём было трудно).", "Не инвестируйте ради статуса, пока не опубликованы правила для инвесторов."]],
+      ["Если вы открываете бизнес", ["Заранее откройте бизнес-счёт.", "Сохраняйте подтверждение оборота за 60 дней до подачи (индивидуальный предприниматель: 1 000 000 драмов) либо подтверждение 2 000 000 драмов в уставном капитале или в акциях.", "Помните: статус могут прекратить, если через 180 дней налоги от деятельности не видны."]],
+      ["При подаче (только онлайн с 1 ноября)", ["Ожидайте новую платформу Службы миграции и гражданства; название и адрес не подтверждены (migration.e-gov.am и EarlyOne перестают работать 1 ноября).", "Проверьте квоту своей категории, когда цифры будут опубликованы.", "Пошлины на официальных страницах на 22 октября: 105 000 драмов (временный) и 140 000 драмов (постоянный); более высокие суммы объявлены, но не подтверждены."]],
+      ["После получения статуса", ["Продления нет: до истечения временного статуса подайте новое заявление.", "Об отсутствии 183 дня и более сообщите в течение 10 дней.", "Для постоянного статуса, как правило, нужны три года временного за последние пять лет."]],
+      ["Прежде чем платить или подписывать", ["Обсудите свою ситуацию с лицензированным армянским адвокатом."]]
+    ] },
+  hy: { lang: "hy", title: "Ստուգացանկ 2026 թվականի նոյեմբերի 1-ի փոփոխությունից առաջ", notice: "Ընդհանուր տեղեկատվություն, ոչ իրավական խորհրդատվություն։ Հիմնված է 2026 թվականի հոկտեմբերի 22-ին ստուգված ուղեցույցի վրա. քվոտաները, տուրքերը և նոր հարթակը դեռ կարող են փոխվել։ Թարգմանությունը դեռ չի ստուգվել մայրենի խոսողի կողմից։", print: "Տպել", src: "Մանրամասներ և աղբյուրներ՝ ամբողջական ուղեցույցում (hy.html)։",
+    groups: [
+      ["Հիմա", ["Սկսեք փաստաթղթերից. վավերացված թարգմանությունները և ապոստիլը երկրից կախված տևում են երկուսից ութ շաբաթ։", "Պարզեք՝ դեռ հնարավո՞ր է դիմել մինչև նոյեմբերի 1-ը ներկայիս կանոններով (հունիսից ընդունելության գրանցվելը դժվար էր)։", "Բնակություն ստանալու նպատակով մի ներդրեք, մինչև ներդրողների կանոնները հրապարակվեն։"]],
+      ["Եթե բիզնես եք սկսում", ["Նախապես բացեք բիզնես բանկային հաշիվ։", "Պահեք դիմումից առաջ 60 օրվա շրջանառության հաստատումը (անհատ ձեռնարկատեր՝ 1 000 000 դրամ) կամ կանոնադրական կապիտալում կամ բաժնետոմսերում 2 000 000 դրամի հաստատումը։", "Հիշեք՝ կարգավիճակը կարող է դադարեցվել, եթե 180 օր անց գործունեությունից հարկ չի երևում։"]],
+      ["Դիմելիս (նոյեմբերի 1-ից՝ միայն առցանց)", ["Սպասեք Միգրացիայի և քաղաքացիության ծառայության նոր հարթակին. անվանումը և հասցեն չեն հաստատվել (migration.e-gov.am-ը և EarlyOne-ը նոյեմբերի 1-ին դադարում են աշխատել)։", "Ստուգեք ձեր կարգի քվոտան, երբ թվերը հրապարակվեն։", "Պետական տուրքերը պաշտոնական էջերում հոկտեմբերի 22-ին՝ 105 000 դրամ (ժամանակավոր) և 140 000 դրամ (մշտական). ավելի բարձր գումարներ հայտարարված են, բայց չեն հաստատվել։"]],
+      ["Կարգավիճակ ստանալուց հետո", ["Երկարաձգում չկա. ժամանակավոր կարգավիճակի ժամկետը լրանալուց առաջ ներկայացրեք նոր դիմում։", "183 օր և ավելի բացակայելու մասին տեղեկացրեք 10 օրվա ընթացքում։", "Մշտական բնակության համար, որպես կանոն, պետք է վերջին հինգ տարում երեք տարի ժամանակավոր կարգավիճակ։"]],
+      ["Նախքան վճարելը կամ ստորագրելը", ["Քննարկեք ձեր իրավիճակը լիցենզավորված հայ փաստաբանի հետ։"]]
+    ] }
+};
+var $ = function (id) { return document.getElementById(id); };
+function clair(l) {
+  var d = D[l]; document.documentElement.lang = d.lang; document.title = "ResidenceWatch · " + d.title;
+  $("t").textContent = d.title; $("n").textContent = d.notice; $("s").textContent = d.src; $("p").textContent = d.print;
+  var c = $("c"); c.textContent = "";
+  d.groups.forEach(function (g, i) {
+    var h = document.createElement("h2"); h.textContent = g[0]; c.appendChild(h);
+    var ul = document.createElement("ul");
+    g[1].forEach(function (txt, j) {
+      var li = document.createElement("li"), lab = document.createElement("label"), cb = document.createElement("input"), sp = document.createElement("span");
+      cb.type = "checkbox"; cb.id = "k" + i + "_" + j; sp.textContent = txt;
+      try { cb.checked = localStorage.getItem(cb.id) === "1"; } catch (e) {}
+      cb.addEventListener("change", function () { try { localStorage.setItem(cb.id, cb.checked ? "1" : "0"); } catch (e) {} });
+      lab.appendChild(cb); lab.appendChild(sp); li.appendChild(lab); ul.appendChild(li);
+    });
+    c.appendChild(ul);
+  });
+  Array.prototype.forEach.call(document.querySelectorAll(".langs button"), function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-l") === l ? "true" : "false"); });
+}
+Array.prototype.forEach.call(document.querySelectorAll(".langs button"), function (b) { b.addEventListener("click", function () { clair(b.getAttribute("data-l")); }); });
+$("p").addEventListener("click", function () { window.print(); });
+var m = /[?&]lang=(en|ru|hy)/.exec(location.search);
+clair(m ? m[1] : "en");
+</script>
+<p style="text-align:center;font-size:.85rem;margin:24px 0"><a href="legal.html">Legal notice</a> · <a href="privacy.html">Privacy</a> · <a href="changes.html">Changes</a></p>
+</body>
+</html>

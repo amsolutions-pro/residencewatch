@@ -1,0 +1,219 @@
+<!doctype html>
+
+<html lang="hy">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ResidenceWatch · Հայաստանում բնակության կանոնները 2026 թվականի նոյեմբերի 1-ից</title>
+<meta name="description" content="Ինչ է փոխվում Հայաստանում բնակության թույլտվության հարցում 2026 թվականի նոյեմբերի 1-ից. դիմումները՝ առցանց, 10-ամյա հատուկ կարգավիճակի վերացում, քվոտաներ, ձեռնարկատերերի շեմեր։ Աղբյուրներով և ամսաթվերով, իրավական խորհրդատվություն չէ։">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ResidenceWatch · Հայաստանում բնակության կանոնները 2026 թվականի նոյեմբերի 1-ից">
+<meta property="og:description" content="Ինչ է փոխվում Հայաստանում բնակության թույլտվության հարցում 2026 թվականի նոյեմբերի 1-ից. դիմումները՝ առցանց, 10-ամյա հատուկ կարգավիճակի վերացում, քվոտաներ, ձեռնարկատերերի շեմեր։ Աղբյուրներով և ամսաթվերով, իրավական խորհրդատվություն չէ։">
+<meta name="twitter:card" content="summary">
+<link rel="alternate" hreflang="en" href="index.html">
+<link rel="alternate" hreflang="ru" href="ru.html">
+<link rel="alternate" hreflang="hy" href="hy.html">
+
+<link rel="stylesheet" href="fonts/hy.css">
+<style>
+/* Layout: same reading column as the English page; body face switched to one with full Armenian. */
+:root {
+  --bg: #fbfaf7;
+  --surface: #ffffff;
+  --ink: #1d232b;
+  --muted: #5d6672;
+  --line: #e2ddd3;
+  --accent: #9b2c1f;
+  --accent-soft: #f6e7e2;
+  --warn: #8a5a00;
+  --warn-soft: #fbf0d9;
+  --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-body: "Noto Sans Armenian", "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #14171c; --surface: #1b2027; --ink: #e8e6e1; --muted: #a3a9b2; --line: #2e343d;
+    --accent: #f08a74; --accent-soft: #3a211c; --warn: #f2c26b; --warn-soft: #33290f; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 max(16px, env(safe-area-inset-left, 0px)) 0 max(16px, env(safe-area-inset-right, 0px)); }
+header.top { border-bottom: 1px solid var(--line); }
+header.top .wrap { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-block: 14px; flex-wrap: wrap; }
+.brand { font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; color: var(--ink); text-decoration: none; }
+.brand span { color: var(--accent); }
+.meta-top { display: flex; gap: 14px; align-items: baseline; flex-wrap: wrap; }
+.updated { color: var(--muted); font-size: .85rem; }
+.lang { font-size: .85rem; font-weight: 600; }
+.hero { padding-block: 40px 24px; display: grid; gap: 14px; }
+h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.8rem, 5vw, 2.5rem); line-height: 1.15; margin: 0; text-wrap: balance; }
+.lede { font-size: 1.1rem; color: var(--muted); margin: 0; max-width: 62ch; }
+.notice { background: var(--warn-soft); color: var(--ink); border-left: 4px solid var(--warn); padding: 12px 16px; border-radius: 6px; font-size: .95rem; }
+main section { padding-block: 22px; border-top: 1px solid var(--line); display: grid; gap: 12px; }
+h2 { font-family: var(--font-display); font-weight: 600; font-size: 1.45rem; line-height: 1.25; margin: 0; text-wrap: balance; }
+p { margin: 0; max-width: 68ch; }
+ol, ul { margin: 0; padding-left: 1.3em; display: grid; gap: 8px; max-width: 68ch; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 700; background: var(--accent-soft); }
+tr:last-child td { border-bottom: 0; }
+.num { font-variant-numeric: tabular-nums; }
+.tag { display: inline-block; font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
+.tag.open { background: var(--warn-soft); color: var(--warn); }
+.path { display: grid; gap: 10px; }
+.step { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; display: grid; gap: 4px; }
+.step b { font-family: var(--font-display); font-size: 1.05rem; }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px; }
+details + details { margin-top: 8px; }
+summary { cursor: pointer; font-weight: 600; }
+details p { margin-top: 8px; }
+a { color: var(--accent); }
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.sources li { font-size: .92rem; overflow-wrap: anywhere; }
+footer { border-top: 1px solid var(--line); margin-top: 24px; }
+footer .wrap { padding-block: 22px 40px; color: var(--muted); font-size: .88rem; display: grid; gap: 6px; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#">Residence<span>Watch</span></a>
+    <span class="meta-top">
+      <span class="updated">Թարմացվել է՝ 2026 թ. հոկտեմբերի 22-ին</span>
+      <a class="lang" href="index.html" hreflang="en" lang="en">English</a>
+      <a class="lang" href="ru.html" hreflang="ru" lang="ru">Русский</a>
+      <a class="lang" href="checklist.html?lang=hy">Ստուգացանկ</a>
+    </span>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Հայաստանում բնակության կանոնները փոխվում են 2026 թվականի նոյեմբերի 1-ից</h1>
+    <p class="lede">Ինչ է հայտնի, ինչը դեռ հայտնի չէ և ինչ պետք է պատրաստել արդեն հիմա։ Յուրաքանչյուր կետ ունի ամսաթիվ և աղբյուր, իսկ երբ աղբյուրները հակասում են, մենք դա նշում ենք։</p>
+    <p class="notice"><strong>Անցումային շրջան։</strong> Նոր կանոնները գործում են 2026 թվականի նոյեմբերի 1-ից. կիրարկման ակտերը, քվոտաներն ու տուրքերը դեռ կարող են փոխվել։ Ստորև բոլոր կետերը ստուգվել են 2026 թվականի հոկտեմբերի 22-ին։ <strong>Սա ընդհանուր տեղեկատվություն է, ոչ թե իրավական խորհրդատվություն։</strong> ResidenceWatch-ը կապ չունի Հայաստանի կառավարության և Միգրացիայի և քաղաքացիության ծառայության հետ։</p>
+  </div>
+
+  <p class="notice"><strong>Այս թարգմանությունը դեռ չի ստուգվել մայրենի խոսողի կողմից։</strong> Անհամապատասխանության դեպքում գերակայում է անգլերեն տարբերակը. իրավական ուժ ունեն միայն հայերենով պաշտոնական տեքստերը։</p>
+  <section id="changes">
+    <h2>Ինչ է փոխվում նոյեմբերի 1-ին</h2>
+    <ol>
+      <li><strong>Դիմումները ներկայացվում են միայն առցանց</strong>՝ Միգրացիայի և քաղաքացիության ծառայության նոր հարթակով։ Ներկայիս հարթակը (migration.e-gov.am) և EarlyOne հավելվածը այդ օրվանից դադարում են աշխատել։</li>
+      <li><strong>10-ամյա հատուկ բնակության կարգավիճակը վերացվում է։</strong> Արդեն տրված կարգավիճակները մնում են գործող։</li>
+      <li><strong>Սահմանվում են տարեկան քվոտաներ</strong>՝ ըստ կարգավիճակի տեսակի։ Երբ քվոտան սպառվում է, այդ կարգի նոր դիմումները մերժվում են։ Թվերը դեռ հրապարակված չեն։</li>
+      <li><strong>Նոյեմբերի 1-ից առաջ ներկայացված դիմումները</strong> քննվում են ներկայացման պահին գործող կանոններով։</li>
+      <li><strong>Երկարաձգում այլևս չկա։</strong> Երբ ժամանակավոր կարգավիճակի ժամկետը լրանում է, ներկայացվում է նոր դիմում։</li>
+      <li><strong>Որոշումը՝ 30 օրվա ընթացքում</strong>՝ փաստաթղթերի ամբողջական փաթեթը ներկայացնելուց հետո։</li>
+      <li><strong>183 օր և ավելի Հայաստանից բացակայելու մասին</strong> պետք է տեղեկացնել 10 օրվա ընթացքում։</li>
+    </ol>
+  </section>
+
+  <section id="path">
+    <h2>Մշտական բնակության նոր ճանապարհը</h2>
+    <div class="path">
+      <div class="step"><b>1. Ժամանակավոր բնակության կարգավիճակ</b><span>Մինչև մեկ տարի։ Երկարաձգում չկա. ժամկետը լրանալուց հետո ներկայացվում է նոր դիմում։</span></div>
+      <div class="step"><b>2. Վերջին հինգ տարվա ընթացքում՝ երեք տարի ժամանակավոր կարգավիճակ</b><span>Պահանջվում է «ընտանիք» և «ձեռնարկատիրություն» հիմքերի համար։ Տարիները պարտադիր չէ լինեն անընդմեջ։</span></div>
+      <div class="step"><b>3. Մշտական բնակության կարգավիճակ</b><span>Որպես կանոն՝ հինգ տարով, հինգ հիմքերից մեկով՝ ՀՀ քաղաքացու հետ ընտանեկան կապ, հայկական ծագում, ձեռնարկատիրական գործունեություն, ներդրում կամ Հայաստանի առջև ունեցած բացառիկ վաստակ։</span></div>
+    </div>
+    <p><strong>10-ամյա հատուկ կարգավիճակը և հատուկ անձնագիրը վերացվում են։</strong> Արդեն ստացածները պահպանում են իրենց իրավունքները մինչև ժամկետի ավարտը։ Հայկական ծագումը մնում է մշտական բնակության հինգ հիմքերից մեկը։</p>
+    <p><span class="tag open">Չհաստատված</span> Մի իրավաբանական ընկերություն նկարագրում է ներդրողների արագացված ուղի՝ անմիջապես հինգ տարվա կարգավիճակով։ Կառավարությունը դեռ չի սահմանել ներդրողների կանոնները (գումար, թույլատրելի ակտիվներ, պահման ժամկետ)։ Բնակություն ստանալու նպատակով մի ներդրեք, մինչև դրանք հրապարակվեն։</p>
+  </section>
+
+  <section id="entrepreneurs">
+    <h2>Ձեռնարկատերերի նվազագույն շեմերը</h2>
+    <p>«Օտարերկրացիների մասին» օրենքի 29.4 հոդվածը, որը ավելացվել է 2026 թվականի հունվարի 20-ի ՀՕ-11-Ն օրենքով՝ իրավաբանական լրատվամիջոցների տվյալներով։ Պաշտոնական տեքստի հղումը կավելացնենք, հենց որ այն հասանելի լինի առցանց։</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Իրավիճակ</th><th>Նվազագույնը</th></tr></thead>
+        <tbody>
+          <tr><td>Ընկերության մասնակից</td><td class="num">կանոնադրական կապիտալում ներդրված առնվազն 2 000 000 դրամ</td></tr>
+          <tr><td>Բաժնետոմսերի կամ արժեթղթերի սեփականատեր</td><td class="num">առնվազն 2 000 000 դրամի բաժնետոմսեր կամ արժեթղթեր</td></tr>
+          <tr><td>Անհատ ձեռնարկատեր, բանկային հաշիվների մնացորդով</td><td class="num">բանկային հաշիվներում առնվազն 1 000 000 դրամ</td></tr>
+          <tr><td>Անհատ ձեռնարկատեր, շրջանառությամբ</td><td class="num">դիմումից առաջ 60 օրվա ընթացքում առնվազն 1 000 000 դրամ շրջանառություն</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Կարգավիճակը կարող է դադարեցվել, եթե այն տրամադրվելուց հետո 180 օրվա ընթացքում հարկային տվյալների բազայում ձեռնարկատիրական գործունեությունից հարկ չի երևում, կամ եթե ներդրված կապիտալը 1 000 000 դրամից պակաս է դարձել կամ հանվել է։</p>
+  </section>
+
+  <section id="unknown">
+    <h2>Ինչը դեռ հայտնի չէ (2026 թվականի հոկտեմբերի 22-ի դրությամբ)</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Հարց</th><th>Կարգավիճակ</th></tr></thead>
+        <tbody>
+          <tr><td>Քվոտաների չափերը ըստ կարգերի</td><td><span class="tag open">Չի հրապարակվել</span></td></tr>
+          <tr><td>Ներդրողներ՝ գումար, ակտիվներ, պահման ժամկետ</td><td><span class="tag open">Չի հրապարակվել</span></td></tr>
+          <tr><td>Պետական տուրքեր</td><td><span class="tag open">Նոր գումարները չեն հաստատվել</span> <strong>Պաշտոնական էջերում 2026 թվականի հոկտեմբերի 22-ին՝</strong> 105 000 դրամ ժամանակավոր բնակության համար (մինչև մեկ տարի. նույնքան՝ երկարաձգման համար) և 140 000 դրամ մշտական բնակության համար (5 տարի)։ Ժամանակավոր կարգավիճակը անվճար է որոշ դիմողների համար, այդ թվում՝ անչափահասների և ՀՀ քաղաքացու մերձավոր հարազատների։ Ավելի բարձր գումարներ հայտարարված են, բայց պաշտոնական էջերում դեռ չկան. Repat Armenia-ի տվյալներով՝ 155 950 դրամ (ժամանակավոր) և 255 950 դրամ (մշտական) նոյեմբերի 1-ի փոփոխություններով, դիմումը մերժվելու դեպքում չեն վերադարձվում. այլ աղբյուրներ նշում են մոտ 150 000 և 250 000 դրամ՝ 2027 թվականի հունվարի 1-ից։ Գումարները կարող են փոխվել 2027 թվականին։</td></tr>
+          <tr><td>Նոր հարթակի անվանումը և հասցեն</td><td><span class="tag open">Չհաստատված</span> Repat Armenia-ն այն անվանում է «Միգրացիայի և քաղաքացիության ծառայության էլեկտրոնային համակարգ». այլ աղբյուրներ նշում են permit.am։</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="now">
+    <h2>Ինչ անել հիմա</h2>
+    <ul>
+      <li><strong>Սկսեք փաստաթղթերից։</strong> Վավերացված թարգմանությունները և ապոստիլը երկրից կախված տևում են երկուսից ութ շաբաթ։ Թերի առցանց դիմումը կարող է մերժվել։</li>
+      <li><strong>Պարզեք՝ դեռ հնարավո՞ր է դիմել մինչև նոյեմբերի 1-ը</strong> ներկայիս կանոններով։ Հունիսից ընդունելության գրանցվելը դժվար էր։</li>
+      <li><strong>Ձեռնարկատերերի համար.</strong> նախապես բացեք բիզնես հաշիվ և պահեք վերջին 60 օրվա շրջանառության հաստատումը։</li>
+      <li><strong>Ստուգեք ձեր կարգի քվոտան</strong> դիմելու պահին, երբ թվերը հրապարակվեն։</li>
+      <li><strong>Քննարկեք ձեր իրավիճակը իրավաբանի հետ</strong>՝ նախքան տուրք վճարելը կամ ներդրում անելը։</li>
+    </ul>
+  </section>
+
+  <section id="faq">
+    <h2>Հարցեր</h2>
+    <details>
+      <summary>Սա իրավական խորհրդատվությո՞ւն է։</summary>
+      <p>Ոչ։ Այս էջը բաց աղբյուրներից տալիս է ընդհանուր տեղեկատվություն՝ ամսաթվերով և հղումներով։ Այն չի գնահատում ձեր անձնական իրավիճակը և ձեր փոխարեն ոչինչ չի ներկայացնում։</p>
+    </details>
+    <details>
+      <summary>Ո՞վ է կանգնած ResidenceWatch-ի հետևում։</summary>
+      <p>Անկախ տեղեկատվական նախագիծ։ Մենք կապ չունենք որևէ պետական մարմնի հետ և բնակության թույլտվություններ չենք վաճառում։</p>
+    </details>
+    <details>
+      <summary>Որքա՞ն հաճախ է էջը թարմացվում։</summary>
+      <p>Ամեն անգամ, երբ պաշտոնական տեքստը կամ հայտարարությունը փոխում է վերը նշված կետերից որևէ մեկը։ Վերևի ամսաթիվը ցույց է տալիս վերջին թարմացումը։</p>
+    </details>
+  </section>
+
+  <section id="about">
+    <h2>Այս տեղեկատվության մասին</h2>
+    <p><strong>Միայն ընդհանուր տեղեկատվություն։</strong> ResidenceWatch-ը հրապարակում է Հայաստանում բնակության կանոնների մասին ընդհանուր տեղեկատվություն։ Սա իրավական խորհրդատվություն չէ և փաստաբանի ու վստահորդի հարաբերություն չի ստեղծում։ Հայաստանի օրենսդրությունը փոխվում է 2026 թվականի նոյեմբերի 1-ին. կիրարկման ակտերը, քվոտաներն ու տուրքերը դեռ կարող են փոխվել։ Իրավական ուժ ունեն միայն հայերենով պաշտոնական տեքստերը. մեր անգլերեն և ռուսերեն տարբերակները ոչ պաշտոնական թարգմանություններ են։ Յուրաքանչյուր էջում նշված է վերջին ստուգման ամսաթիվը։ Նախքան գործելը ստուգեք ստորև նշված պաշտոնական աղբյուրները կամ դիմեք լիցենզավորված հայ փաստաբանի։ ResidenceWatch-ը կապ չունի Հայաստանի կառավարության և նրա Միգրացիայի և քաղաքացիության ծառայության հետ։ Օրենքով թույլատրելի սահմաններում մենք պատասխանատվություն չենք կրում այս կայքի հիման վրա կայացրած որոշումների համար։</p>
+  </section>
+  
+
+  <section id="sources">
+    <h2>Աղբյուրներ (անգլերեն)</h2>
+    <ul class="sources">
+      <li><a href="https://migration.mia.gov.am/en/articles/news/notice-services-provided-within-the-framework-of-obtaining-residency-status-in-the-republic-of-armenia-will-be-digitized" rel="noopener">Միգրացիայի և քաղաքացիության ծառայություն (պաշտոնական հաղորդագրություն, 19 հունիսի 2026). 1 նոյեմբերից բնակության կարգավիճակի ծառայությունները թվայնացվում են, migration.e-gov.am-ը և Early One-ը դադարում են աշխատել</a></li>
+      <li><a href="https://arka.am/en/news/politics/residence-permit-application-in-armenia-will-be-fully-online-starting-november-1/" rel="noopener">ARKA. 1 նոյեմբերից բնակության թույլտվության դիմումները՝ միայն առցանց</a></li>
+      <li><a href="https://www.envoyglobal.com/news-alert/armenia-to-digitize-the-residence-permit-application-process-beginning-november-2026/" rel="noopener">Envoy Global, 8 հուլիսի 2026. դիմումների ընդունումն ամբողջությամբ անցնում է առցանց</a></li>
+      <li><a href="https://www.fragomen.com/insights/armenia-significant-immigration-law-reforms-forthcoming.html" rel="noopener">Fragomen. միգրացիոն օրենսդրության սպասվող բարեփոխումը</a></li>
+      <li><a href="https://mostar.am/en/resources/armenia-immigration-law-2026" rel="noopener">MOSTAR. միգրացիոն նոր կանոնները 1 նոյեմբերի 2026-ից</a></li>
+      <li><a href="https://iravaban.net/en/575455.html" rel="noopener">Iravaban. հատուկ բնակության կարգավիճակի վերացումը</a></li>
+      <li><a href="https://armlegal.am/en/armenia-residency-rules-2026/" rel="noopener">ArmLegal. բնակության նոր կանոնները 2026-ից</a></li>
+      <li><a href="https://armenian-lawyer.com/immigration/armenia-immigration-law-overhaul-november-2026/" rel="noopener">Armenian Lawyer. միգրացիոն օրենքի բարեփոխումը, նոյեմբեր 2026</a></li>
+      <li><a href="https://meduza.io/en/feature/2026/10/05/armenia-has-long-been-one-of-the-easiest-places-for-russians-to-relocate-new-residency-rules-are-about-to-make-staying-there-more-complicated" rel="noopener">Meduza, 5 հոկտեմբերի 2026. բնակության նոր կանոնները</a></li>
+      <li><a href="https://schneider-group.com/en/news/countries/armenia-amends-law-on-foreigners-key-changes-effective-1-november-2026/" rel="noopener">Schneider Group. «Օտարերկրացիների մասին» օրենքի փոփոխությունները</a></li>
+      <li><a href="https://iravaban.net/en/575604.html" rel="noopener">Iravaban. ձեռնարկատերերի շեմերը (հոդված 29.4)</a></li>
+      <li><a href="https://www.ey.com/en_am/technical/tax-and-law-alerts/amendments-to-the-ra-law-on-foreigners" rel="noopener">EY Armenia. «Օտարերկրացիների մասին» օրենքի փոփոխությունները</a></li>
+      <li><a href="https://www.repatarmenia.org/repatriate/practical-information/legal-status/applying-for-residence-permit" rel="noopener">Repat Armenia. բնակության կարգավիճակի դիմումը (տուրքեր, հարթակ, քվոտաներ)</a></li>
+      <li><a href="https://migration.mia.gov.am/en/acquiring-temporary-residence-status" rel="noopener">Միգրացիայի և քաղաքացիության ծառայություն. ժամանակավոր բնակության կարգավիճակ (տուրք, ովքեր են ազատված)</a></li>
+      <li><a href="https://migration.mia.gov.am/en/acquiring-permanent-residence-status" rel="noopener">Միգրացիայի և քաղաքացիության ծառայություն. մշտական բնակության կարգավիճակ (տուրք)</a></li>
+      <li><a href="https://mfa.am/en/residency" rel="noopener">ՀՀ ԱԳՆ. ժամանակավոր և մշտական բնակություն (պետական տուրքեր)</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>ResidenceWatch · Ընդհանուր տեղեկատվություն, ոչ իրավական խորհրդատվություն · Կապ չունի Հայաստանի կառավարության հետ։</span>
+    <span>Վերջին թարմացումը՝ 2026 թվականի հոկտեմբերի 22։</span>
+    <span><a href="legal.html">Legal notice</a> · <a href="privacy.html">Privacy</a> · <a href="changes.html">Changes</a></span>
+  </div>
+</footer>
+</body>
+</html>
