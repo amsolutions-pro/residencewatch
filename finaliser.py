@@ -6,7 +6,7 @@ ici = os.path.dirname(os.path.abspath(__file__))
 if len(sys.argv) != 3 or not sys.argv[1].startswith("https://") or "@" not in sys.argv[2]:
     sys.exit(__doc__)
 base = sys.argv[1].rstrip("/") + "/"; contact = sys.argv[2]
-pages = ["index.html", "ru.html", "hy.html", "checklist.html", "names.html", "legal.html", "privacy.html", "changes.html", "quotas.html", "fees.html", "entrepreneurs.html", "permanent-residence.html"]
+pages = ["index.html", "ru.html", "hy.html", "checklist.html", "names.html", "legal.html", "privacy.html", "changes.html", "quotas.html", "fees.html", "entrepreneurs.html", "permanent-residence.html", "ru-quotas.html", "ru-fees.html", "ru-entrepreneurs.html", "ru-permanent-residence.html", "hy-quotas.html", "hy-fees.html", "hy-entrepreneurs.html", "hy-permanent-residence.html"]
 aujourdhui = datetime.date.today().isoformat()
 for p in pages:
     chemin = os.path.join(ici, p); s = open(chemin, encoding="utf-8").read()
