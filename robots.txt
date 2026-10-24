@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://amsolutions-pro.github.io/residencewatch/sitemap.xml
