@@ -1,23 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://amsolutions-pro.github.io/residencewatch/</loc><lastmod>2026-10-24</lastmod></url>
-  <url><loc>https://amsolutions-pro.github.io/residencewatch/ru.html</loc><lastmod>2026-10-24</lastmod></url>
-  <url><loc>https://amsolutions-pro.github.io/residencewatch/hy.html</loc><lastmod>2026-10-24</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://amsolutions-pro.github.io/residencewatch/</loc><lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://amsolutions-pro.github.io/residencewatch/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://amsolutions-pro.github.io/residencewatch/ru.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://amsolutions-pro.github.io/residencewatch/hy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://amsolutions-pro.github.io/residencewatch/"/>
+  </url>
+  <url><loc>https://amsolutions-pro.github.io/residencewatch/ru.html</loc><lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://amsolutions-pro.github.io/residencewatch/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://amsolutions-pro.github.io/residencewatch/ru.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://amsolutions-pro.github.io/residencewatch/hy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://amsolutions-pro.github.io/residencewatch/"/>
+  </url>
+  <url><loc>https://amsolutions-pro.github.io/residencewatch/hy.html</loc><lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://amsolutions-pro.github.io/residencewatch/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://amsolutions-pro.github.io/residencewatch/ru.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://amsolutions-pro.github.io/residencewatch/hy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://amsolutions-pro.github.io/residencewatch/"/>
+  </url>
+  <url><loc>https://amsolutions-pro.github.io/residencewatch/quotas.html</loc><lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://amsolutions-pro.github.io/residencewatch/quotas.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://amsolutions-pro.github.io/residencewatch/ru-quotas.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://amsolutions-pro.github.io/residencewatch/hy-quotas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://amsolutions-pro.github.io/residencewatch/quotas.html"/>
+  </url>
+  <url><loc>https://amsolutions-pro.github.io/residencewatch/ru-quotas.html</loc><lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://amsolutions-pro.github.io/residencewatch/quotas.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://amsolutions-pro.github.io/residencewatch/ru-quotas.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://amsolutions-pro.github.io/residencewatch/hy-quotas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://amsolutions-pro.github.io/residencewatch/quotas.html"/>
+  </url>
+  <url><loc>https://amsolutions-pro.github.io/residencewatch/hy-quotas.html</loc><lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://amsolutions-pro.github.io/residencewatch/quotas.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://amsolutions-pro.github.io/residencewatch/ru-quotas.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://amsolutions-pro.github.io/residencewatch/hy-quotas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://amsolutions-pro.github.io/residencewatch/quotas.html"/>
+  </url>
+  <url><loc>https://amsolutions-pro.github.io/residencewatch/fees.html</loc><lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://amsolutions-pro.github.io/residencewatch/fees.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://amsolutions-pro.github.io/residencewatch/ru-fees.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://amsolutions-pro.github.io/residencewatch/hy-fees.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://amsolutions-pro.github.io/residencewatch/fees.html"/>
+  </url>
+  <url><loc>https://amsolutions-pro.github.io/residencewatch/ru-fees.html</loc><lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://amsolutions-pro.github.io/residencewatch/fees.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://amsolutions-pro.github.io/residencewatch/ru-fees.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://amsolutions-pro.github.io/residencewatch/hy-fees.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://amsolutions-pro.github.io/residencewatch/fees.html"/>
+  </url>
+  <url><loc>https://amsolutions-pro.github.io/residencewatch/hy-fees.html</loc><lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://amsolutions-pro.github.io/residencewatch/fees.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://amsolutions-pro.github.io/residencewatch/ru-fees.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://amsolutions-pro.github.io/residencewatch/hy-fees.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://amsolutions-pro.github.io/residencewatch/fees.html"/>
+  </url>
+  <url><loc>https://amsolutions-pro.github.io/residencewatch/entrepreneurs.html</loc><lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://amsolutions-pro.github.io/residencewatch/entrepreneurs.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://amsolutions-pro.github.io/residencewatch/ru-entrepreneurs.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://amsolutions-pro.github.io/residencewatch/hy-entrepreneurs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://amsolutions-pro.github.io/residencewatch/entrepreneurs.html"/>
+  </url>
+  <url><loc>https://amsolutions-pro.github.io/residencewatch/ru-entrepreneurs.html</loc><lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://amsolutions-pro.github.io/residencewatch/entrepreneurs.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://amsolutions-pro.github.io/residencewatch/ru-entrepreneurs.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://amsolutions-pro.github.io/residencewatch/hy-entrepreneurs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://amsolutions-pro.github.io/residencewatch/entrepreneurs.html"/>
+  </url>
+  <url><loc>https://amsolutions-pro.github.io/residencewatch/hy-entrepreneurs.html</loc><lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://amsolutions-pro.github.io/residencewatch/entrepreneurs.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://amsolutions-pro.github.io/residencewatch/ru-entrepreneurs.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://amsolutions-pro.github.io/residencewatch/hy-entrepreneurs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://amsolutions-pro.github.io/residencewatch/entrepreneurs.html"/>
+  </url>
+  <url><loc>https://amsolutions-pro.github.io/residencewatch/permanent-residence.html</loc><lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://amsolutions-pro.github.io/residencewatch/permanent-residence.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://amsolutions-pro.github.io/residencewatch/ru-permanent-residence.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://amsolutions-pro.github.io/residencewatch/hy-permanent-residence.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://amsolutions-pro.github.io/residencewatch/permanent-residence.html"/>
+  </url>
+  <url><loc>https://amsolutions-pro.github.io/residencewatch/ru-permanent-residence.html</loc><lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://amsolutions-pro.github.io/residencewatch/permanent-residence.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://amsolutions-pro.github.io/residencewatch/ru-permanent-residence.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://amsolutions-pro.github.io/residencewatch/hy-permanent-residence.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://amsolutions-pro.github.io/residencewatch/permanent-residence.html"/>
+  </url>
+  <url><loc>https://amsolutions-pro.github.io/residencewatch/hy-permanent-residence.html</loc><lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://amsolutions-pro.github.io/residencewatch/permanent-residence.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://amsolutions-pro.github.io/residencewatch/ru-permanent-residence.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://amsolutions-pro.github.io/residencewatch/hy-permanent-residence.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://amsolutions-pro.github.io/residencewatch/permanent-residence.html"/>
+  </url>
   <url><loc>https://amsolutions-pro.github.io/residencewatch/checklist.html</loc><lastmod>2026-10-24</lastmod></url>
   <url><loc>https://amsolutions-pro.github.io/residencewatch/names.html</loc><lastmod>2026-10-24</lastmod></url>
   <url><loc>https://amsolutions-pro.github.io/residencewatch/legal.html</loc><lastmod>2026-10-24</lastmod></url>
   <url><loc>https://amsolutions-pro.github.io/residencewatch/privacy.html</loc><lastmod>2026-10-24</lastmod></url>
   <url><loc>https://amsolutions-pro.github.io/residencewatch/changes.html</loc><lastmod>2026-10-24</lastmod></url>
-  <url><loc>https://amsolutions-pro.github.io/residencewatch/quotas.html</loc><lastmod>2026-10-24</lastmod></url>
-  <url><loc>https://amsolutions-pro.github.io/residencewatch/fees.html</loc><lastmod>2026-10-24</lastmod></url>
-  <url><loc>https://amsolutions-pro.github.io/residencewatch/entrepreneurs.html</loc><lastmod>2026-10-24</lastmod></url>
-  <url><loc>https://amsolutions-pro.github.io/residencewatch/permanent-residence.html</loc><lastmod>2026-10-24</lastmod></url>
-  <url><loc>https://amsolutions-pro.github.io/residencewatch/ru-quotas.html</loc><lastmod>2026-10-24</lastmod></url>
-  <url><loc>https://amsolutions-pro.github.io/residencewatch/ru-fees.html</loc><lastmod>2026-10-24</lastmod></url>
-  <url><loc>https://amsolutions-pro.github.io/residencewatch/ru-entrepreneurs.html</loc><lastmod>2026-10-24</lastmod></url>
-  <url><loc>https://amsolutions-pro.github.io/residencewatch/ru-permanent-residence.html</loc><lastmod>2026-10-24</lastmod></url>
-  <url><loc>https://amsolutions-pro.github.io/residencewatch/hy-quotas.html</loc><lastmod>2026-10-24</lastmod></url>
-  <url><loc>https://amsolutions-pro.github.io/residencewatch/hy-fees.html</loc><lastmod>2026-10-24</lastmod></url>
-  <url><loc>https://amsolutions-pro.github.io/residencewatch/hy-entrepreneurs.html</loc><lastmod>2026-10-24</lastmod></url>
-  <url><loc>https://amsolutions-pro.github.io/residencewatch/hy-permanent-residence.html</loc><lastmod>2026-10-24</lastmod></url>
 </urlset>
