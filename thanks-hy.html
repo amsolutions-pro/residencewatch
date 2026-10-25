@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="hy">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Շնորհակալություն – ResidenceWatch</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts/hy.css">
+<style>
+/* Layout: one reading column, a dated status band, then sections in the order a newcomer asks questions. */
+:root {
+  --bg: #fbfaf7;
+  --surface: #ffffff;
+  --ink: #1d232b;
+  --muted: #5d6672;
+  --line: #e2ddd3;
+  --accent: #9b2c1f;      /* apricot-brick, from Armenian tuff stone */
+  --accent-soft: #f6e7e2;
+  --warn: #8a5a00;
+  --warn-soft: #fbf0d9;
+  --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-body: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #14171c; --surface: #1b2027; --ink: #e8e6e1; --muted: #a3a9b2; --line: #2e343d;
+    --accent: #f08a74; --accent-soft: #3a211c; --warn: #f2c26b; --warn-soft: #33290f; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 max(16px, env(safe-area-inset-left, 0px)) 0 max(16px, env(safe-area-inset-right, 0px)); }
+header.top { border-bottom: 1px solid var(--line); }
+header.top .wrap { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-block: 14px; flex-wrap: wrap; }
+.brand { font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; color: var(--ink); text-decoration: none; }
+.brand span { color: var(--accent); }
+.updated { color: var(--muted); font-size: .85rem; }
+.hero { padding-block: 40px 24px; display: grid; gap: 14px; }
+h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.9rem, 5vw, 2.6rem); line-height: 1.15; margin: 0; text-wrap: balance; }
+.lede { font-size: 1.1rem; color: var(--muted); margin: 0; max-width: 62ch; }
+.notice { background: var(--warn-soft); color: var(--ink); border-left: 4px solid var(--warn); padding: 12px 16px; border-radius: 6px; font-size: .95rem; }
+main section { padding-block: 22px; border-top: 1px solid var(--line); display: grid; gap: 12px; }
+h2 { font-family: var(--font-display); font-weight: 600; font-size: 1.45rem; line-height: 1.25; margin: 0; text-wrap: balance; }
+h3 { font-size: 1rem; margin: 0; }
+p { margin: 0; max-width: 68ch; }
+ol, ul { margin: 0; padding-left: 1.3em; display: grid; gap: 8px; max-width: 68ch; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 700; background: var(--accent-soft); }
+tr:last-child td { border-bottom: 0; }
+.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tag { display: inline-block; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
+.tag.ok { background: var(--accent-soft); color: var(--accent); }
+.tag.open { background: var(--warn-soft); color: var(--warn); }
+.path { display: grid; gap: 10px; }
+.step { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; display: grid; gap: 4px; }
+.step b { font-family: var(--font-display); font-size: 1.05rem; }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px; }
+details + details { margin-top: 8px; }
+summary { cursor: pointer; font-weight: 600; }
+details p { margin-top: 8px; }
+a { color: var(--accent); }
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.sources li { font-size: .92rem; overflow-wrap: anywhere; }
+footer { border-top: 1px solid var(--line); margin-top: 24px; }
+footer .wrap { padding-block: 22px 40px; color: var(--muted); font-size: .88rem; display: grid; gap: 6px; }
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="hy.html">Residence<span>Watch</span></a></div></header>
+<main class="wrap"><div class="hero"><h1>Շնորհակալություն</h1><p class="lede">Ձեր հաղորդագրությունն ուղարկվեց։ Մենք կարդում ենք յուրաքանչյուր նամակ. եթե թողել եք էլ. փոստ, կպատասխանենք, երբ հնարավոր լինի։</p></div><section><p><a href="hy.html">Վերադառնալ ուղեցույցին</a></p></section></main>
+</body>
+</html>

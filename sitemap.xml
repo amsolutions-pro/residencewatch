@@ -95,4 +95,10 @@
   <url><loc>https://amsolutions-pro.github.io/residencewatch/legal.html</loc><lastmod>2026-10-24</lastmod></url>
   <url><loc>https://amsolutions-pro.github.io/residencewatch/privacy.html</loc><lastmod>2026-10-24</lastmod></url>
   <url><loc>https://amsolutions-pro.github.io/residencewatch/changes.html</loc><lastmod>2026-10-24</lastmod></url>
+  <url><loc>https://amsolutions-pro.github.io/residencewatch/contact.html</loc><lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://amsolutions-pro.github.io/residencewatch/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://amsolutions-pro.github.io/residencewatch/ru-contact.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://amsolutions-pro.github.io/residencewatch/hy-contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://amsolutions-pro.github.io/residencewatch/contact.html"/>
+  </url>
 </urlset>
